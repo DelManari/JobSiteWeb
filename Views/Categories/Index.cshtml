@@ -1,0 +1,40 @@
+﻿@model IEnumerable<JobOfersWebSite.Models.Categorie>
+
+@{
+    ViewBag.Title = "Categories List";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+<link href="~/Content/index.css" rel="stylesheet" />
+<h2 dir="ltr">Categories List</h2>
+
+<p dir="ltr">
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table"  >
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CategorieName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CategorieDiscription)
+        </th>
+        <th>Operation</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategorieName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CategorieDiscription)
+        </td>
+        <td id="21">
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+    </tr>
+}
+
+</table>

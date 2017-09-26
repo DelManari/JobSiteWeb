@@ -1,0 +1,74 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Anton|Black+Ops+One');
+@font-face{
+    font-family:myFont;
+    src: url('font/GE_SS_Two_Bold.woff') 
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family:'myFont2';
+    src:url('font/DroidKufi-Regular.ttf')
+}
+
+.navbar-default {
+    background-color: #0c5c82;
+    border-color: #e7e7e7;
+
+} 
+.navbar-default .navbar-nav>li>a {
+    color: #e7e7e7;
+    font-weight: bold;
+    font-size:20px;
+    font-family: 'Arial Unicode MS';
+   
+}
+.navbar-default .navbar-nav>li>a:hover {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a:active {
+    color: #fff;
+}
+.nav>li {
+    position: relative;
+    display: block;
+    height: 70px;
+    padding-top: 10px;
+}
+body{
+    padding-top:100px;
+}
+#myfooter{
+    background-color:cornflowerblue;
+    padding-top:10px;
+    font-family:sans-serif;
+    text-align:justify;
+
+}
+#myfooter h3{
+    text-align:left;
+    margin-bottom:20px;
+}
+.subfooter{
+    background-color:darkblue;
+    padding:10px;
+    text-align:center;
+    font-weight:bold;
+    color:#e7e7e7;
+}
+
+#myfooter a{
+    color:#e7e7e7;
+    font-weight:bold;
+
+
+}
+#myfooter ul{
+    text-align:left;
+    list-style-type:none;
+
+}
+.logosize{
+    width:120px;
+    height:60px;
+    margin-top:-18px;
+}

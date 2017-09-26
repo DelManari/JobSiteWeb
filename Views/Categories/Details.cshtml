@@ -1,0 +1,35 @@
+﻿@model JobOfersWebSite.Models.Categorie
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/shared/_MainLayout.cshtml";
+}
+<link href="~/Content/index.css" rel="stylesheet" />
+<h2>Details</h2>
+
+<div>
+    <h4>Categorie</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CategorieName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategorieName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CategorieDiscription)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CategorieDiscription)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

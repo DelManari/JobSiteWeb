@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html >
+<head>
+    <meta name="viewport" content="width=device-width,initial scale=1" />
+    <title>@ViewBag.Title</title>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Style.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+
+                @Html.Partial("_Login")
+
+                <ul class="nav navbar-nav navbar-right">
+
+                    <li>
+                        <a href="#">
+                            About <i class="glyphicon glyphicon-info-sign"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+
+
+                            Contact us <i class="glyphicon glyphicon-envelope"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Jobs by Category <i class="glyphicon glyphicon-folder-open"> </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Home <i class="glyphicon glyphicon-home"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="navbar-brand">
+                            <img src="~/images/logo.png" class="logosize" />
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            @RenderBody()
+
+        </div>
+    </div>
+    <footer class="navbar navbar-fixed-bottom" id="myfooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3> who are we <i class="glyphicon glyphicon-question-sign"></i></h3>
+                    <p style="    color:#e7e7e7;  font-weight:bold; text-align:left;" dir="ltr">
+                        .Who Are You est un single des Who issu de l'album Who Are You, paru en 1978. Il parut comme un single avec double face A, avec la composition de John Entwistle Had Enough sur l'autre face.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3>important links <i class="glyphicon glyphicon-link"></i> </h3>
+                    <ul>
+                        <li><a href="#">Public sector jobs</a></li>
+                        <li><a href="#">Private sector jobs</a></li>
+                        <li><a href="#">Jobs outside the country</a></li>
+                        <li><a href="#">Miscellaneous Jobs</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>
+                        Contact US <i class="glyphicon glyphicon-envelope"> </i>
+                    </h3>
+                    <ul>
+                        <li><a href="https://www.facebook.com/DelManari">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">E-mail</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="subfooter">
+            <span>all rights reserved DelManari-2017</span>
+        </div>
+    </footer>
+    <script src="~/Scripts/jquery.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    @RenderSection("Scripts",required:false)
+</body>
+</html>
